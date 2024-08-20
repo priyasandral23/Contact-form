@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    text-align: center; /* Center the heading */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 24rem;
+    gap: 1rem;
+}
+
+input,
+select,
+textarea {
+    padding: 1.2rem;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 6rem;
+}
+
+button {
+    width: 100%;
+    padding: 1.2rem;
+    cursor: pointer;
+    background: #673de6;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 480px) {
+    form {
+        width: 100%; /* Full width on small screens */
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 1rem;
+        font-size: 0.9rem; /* Slightly reduce font size */
+    }
+
+    button {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    input,
+    select,
+    textarea {
+        padding: 0.8rem;
+        font-size: 0.8rem; /* Further reduce font size for very small screens */
+    }
+
+    button {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
+}
